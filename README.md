@@ -1,11 +1,11 @@
 # from-template 
 
 This package `from-template` allows users to quickly set up a working template for a variety of Racket projects.
-It works by adding a new `raco` command `from-template` that downloads a repo from 
+It works by adding a new `raco` command `new` that downloads a repo from 
 [github.com/racket-templates](https://github.com/racket-templates) and removing the git history 
 from the project so you get a fresh start.
 
-# Install
+# How To Install
 
 1. [Set your PATH environment variable](https://github.com/racket/racket/wiki/Set-your-PATH-environment-variable) 
 so you can use `raco` and other Racket command line functions.
@@ -13,11 +13,16 @@ so you can use `raco` and other Racket command line functions.
 ```bash
 raco pkg install from-template
 ```
-
-# Usage 
+3. 
 ```bash
-raco from-template <template-name> <destination-dir>
+raco new raco-command <destination-dir>
 ```
+If you omit `<destination-dir>`, the command will add copy the template to a folder called `raco-command` in the current folder.
+
+# How to use
+
+This is working example that you can change to suit your needs.
+
 
 # Contributing to this project
 
