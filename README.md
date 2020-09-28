@@ -1,9 +1,13 @@
-# from-template 
+# raco-command 
 
-This package `from-template` allows users to quickly set up a working template for a variety of Racket projects.
-It works by adding a new `raco` command `new` that downloads a repo from 
-[github.com/racket-templates](https://github.com/racket-templates) and removing the git history 
-from the project so you get a fresh start.
+An working example of an extension to the `raco` command line tool you can use as a starting point for your own extensions.
+
+This app is package that is used to implement the `raco new` command that lets you use apps in this collection. 
+
+It works by adding a new `raco` command `new` that 
+1. downloads the selected git repository (`git clone`) from the 
+[racket-templates](https://github.com/racket-templates) collection. 
+2. removes the git history from the project so you can create a new repository for your project.
 
 # How To Install
 
